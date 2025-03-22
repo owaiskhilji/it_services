@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <div className="w-full h-full min-h-[80%] p-4 bg-[#6F4E37]  text-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 p-4 border-b-2 border-gray-600 md:py-12 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 p-4 border-b-2 border-[#EFDCAB] md:py-12 gap-4">
         <div className="flex flex-col gap-4 px-8">
           <h2 className="text-5xl font-bold tracking-light capitalize font-rowdies">
             Lets make something together
