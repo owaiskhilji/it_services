@@ -69,7 +69,7 @@ const Navbar = () => {
       {/* Hamburger Menu */}
       <div className="md:hidden">
         <button
-          className="flex items-center gap-2 px-4 py-2 text-white bg-[#6F4E37] rounded-full hover:bg-[#EFDCAB] focus:outline-none focus:ring-2 focus:ring-[#6F4E37]"
+          className="flex items-center gap-2 px-1 py-1 text-[#6F4E37] border-2 border-[#6F4E37] rounded-md"
           aria-label="Toggle navigation menu"
           onClick={() => setOpenNav(!openNav)}
           title="menu"

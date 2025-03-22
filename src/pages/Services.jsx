@@ -22,7 +22,7 @@ const Services = () => {
           className="w-full h-full  max-h-[25rem] md:max-h-[30rem] object-cover rounded-lg mb-4"
         />
         <div className="flex flex-col gap-4 mb-4 border-b-2 border-l-2 border-[#EFDCAB] rounded-lg p-4">
-          <h2 className="text-3xl font-bold mb-4 font-serif">
+          <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4 font-serif">
             We're <span className="text-[#EFDCAB]"> Dedicated</span>
           </h2>
           <p className="text-xl text-white">

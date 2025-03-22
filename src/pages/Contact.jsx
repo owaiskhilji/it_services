@@ -42,7 +42,7 @@ const ContactPage = () => {
         <div className="flex flex-col md:flex-row gap-8">
           {/* Contact Info */}
           <div className="w-full md:w-1/2 p-4">
-            <h2 className="text-3xl font-bold mb-4 font-serif">Get in Touch</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4 font-serif">Get in Touch</h2>
             <p className="text-xl mb-4 text-white">
               Have questions or inquiries? Reach out to us, and we'll be happy to assist you!
             </p>

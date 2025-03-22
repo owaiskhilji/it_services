@@ -14,7 +14,7 @@ const About = () => {
       <div className="flex flex-col md:flex-row gap-8">
         {/* About Section */}
         <div className="w-full flex flex-col gap-4 md:w-1/2 p-4">
-          <h2 className="text-3xl font-bold mb-4 font-serif">Our Story</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4 font-serif">Our Story</h2>
           <p className="text-xl mb-4 border-b-2 border-l-2 border-[#EFDCAB] rounded-lg p-4">
           We are a creative digital agency driven by a passion for designing and developing innovative digital solutions. Our goal is to help businesses grow and strengthen their online presence in the digital world.
           </p>
