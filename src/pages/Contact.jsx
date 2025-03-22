@@ -36,7 +36,7 @@ const ContactPage = () => {
   return (
     <div className="w-full h-full min-h-screen bg-[#6F4E37] text-white p-8">
       <div >
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tighter font-serif text-center mb-8">
+        <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold tracking-tighter font-serif text-center mb-8">
           <span className="text-[#EFDCAB]">Contact</span> Us
         </h1>
         <div className="flex flex-col md:flex-row gap-8">

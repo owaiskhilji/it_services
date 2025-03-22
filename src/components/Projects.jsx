@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
-import devImg from "../assets/services/webdev.png";
-import designImg from "../assets/services/webdes.png";
+import devImg from "../assets/services/s-dev.jpg";
+import designImg from "../assets/services/s-design.jpg";
 import grades from "../assets/services/grades.png";
 
 const Projects = () => {
@@ -34,7 +34,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-2 items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-3 sm:ml-20 md:ml-3 lg:ml-20 items-center">
         <div className="flex flex-col gap-2 p-2">
           <img
             src={devImg}

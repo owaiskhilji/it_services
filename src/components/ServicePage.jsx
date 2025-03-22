@@ -226,7 +226,7 @@ const ServicePage = () => {
             <p className="text-lg text-gray-600 tracking-normal">
               {testimonial.feedback}
             </p>
-            <p className="text-sm text-gray-900 tracking-normal">
+            <p className="text-sm text-gray-600 tracking-normal">
               - {testimonial.client}
             </p>
           </div>
