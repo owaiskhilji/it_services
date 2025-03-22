@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-[2fr,1fr,1fr,1fr] gap-4 p-4">
           <div className="flex flex-col gap-4 px-8">
             <Link to="/" className="flex items-center gap-4">
-              <img src={logo} alt="logo" className="w-28 h-28 w-auto" />
+              <img src={logo} alt="logo" className="w-32 h-32 w-auto" />
               <h2 className="text-3xl font-bold text-gray-600 font-serif tracking-tighter">
                 FlestaPro
               </h2>

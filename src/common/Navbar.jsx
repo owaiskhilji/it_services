@@ -23,9 +23,9 @@ const Navbar = () => {
         <img
           src={logo}
           alt="logo"
-          className="w-28 h-28 object-cover rounded-lg"
+          className="w-20 h-20 object-cover rounded-lg"
         />
-        <span className="text-4xl font-bold tracking-tighter text-[#6F4E37] font-serif">
+        <span className="text-3xl font-bold tracking-tighter text-[#6F4E37] font-serif">
           FlestaPro
         </span>
       </NavLink>
