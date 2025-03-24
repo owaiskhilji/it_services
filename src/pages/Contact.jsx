@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser"; // Corrected import
 import { Link } from "react-router-dom";
-// #6F4E37
-// #EFDCAB
+
 const ContactPage = () => {
   const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
+  const [name, setName] = useState(""); // Changed from subject to name
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
 
@@ -15,27 +14,30 @@ const ContactPage = () => {
     setStatus("Sending...");
 
     const templateParams = {
-      from_name: subject,
+      from_name: name, // Corrected field name
       from_email: email,
       message: message,
     };
 
     emailjs
       .send(
-        "service_kje6q8m", // ✅ Your EmailJS Service ID
-        "template_46oejsg", // ✅ Your EmailJS Template ID
+        "service_j9g08zt",
+        "template_96yci0d",
         templateParams,
-        "94qs4QscbFYqEwCFM" // ✅ Your EmailJS Public Key
+        "94qs4QscbFYqEwCFM"
       )
       .then(
         () => setStatus("Email Sent Successfully!"),
-        (error) => setStatus("Failed to Send Email: " + error.text)
+        (error) => {
+          console.error("EmailJS Error:", error);
+          setStatus("Failed to Send Email. Please try again later.");
+        }
       );
   };
 
   return (
     <div className="w-full h-full min-h-screen bg-[#6F4E37] text-white p-8">
-      <div >
+      <div>
         <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold tracking-tighter font-serif text-center mb-8">
           <span className="text-[#EFDCAB]">Contact</span> Us
         </h1>
@@ -63,8 +65,8 @@ const ContactPage = () => {
               <input
                 type="text"
                 placeholder="Your Name"
-                value={subject}
-                onChange={(e) => setSubject(e.target.value)}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="p-4 border border-gray-500 rounded-lg"
                 required
               />
@@ -85,9 +87,14 @@ const ContactPage = () => {
               ></textarea>
               <button
                 type="submit"
-                className="bg-[#EFDCAB] hover:bg-[#6F4E37] text-gray-500 hover:text-white font-bold py-3 rounded-lg"
+                disabled={status === "Sending..."}
+                className={`font-bold py-3 rounded-lg ${
+                  status === "Sending..."
+                    ? "bg-gray-400 text-white cursor-not-allowed"
+                    : "bg-[#EFDCAB] hover:bg-[#6F4E37] text-gray-500 hover:text-white"
+                }`}
               >
-                Send Message
+                {status === "Sending..." ? "Sending..." : "Send Message"}
               </button>
             </form>
             {/* Status Message */}
