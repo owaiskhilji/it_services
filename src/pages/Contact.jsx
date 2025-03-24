@@ -14,8 +14,8 @@ const ContactPage = () => {
     setStatus("Sending...");
 
     const templateParams = {
-      from_name: name, // Corrected field name
-      from_email: email,
+      name: name,
+      email: email,
       message: message,
     };
 
@@ -27,7 +27,10 @@ const ContactPage = () => {
         "94qs4QscbFYqEwCFM"
       )
       .then(
-        () => setStatus("Email Sent Successfully!"),
+        () => {setStatus("Email Sent Successfully!")
+        console.log(templateParams.name)
+        console.log(templateParams.email)
+      },
         (error) => {
           console.error("EmailJS Error:", error);
           setStatus("Failed to Send Email. Please try again later.");
