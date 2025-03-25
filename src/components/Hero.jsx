@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative top-20 flex flex-col md:flex-row gap-10 pt-[250px] px-6 md:px-12 lg:px-12">
+      <div className="relative top-16 flex flex-col md:flex-row gap-10 pt-[250px] px-6 md:px-12 lg:px-12">
    <div className="flex flex-col flex-grow space-y-4 " >
   <h1 className="text-2xl md:text-4xl lg:text-4xl text-gray-600 font-bold tracking-tight leading-snug font-serif">
     Elevate Your Brand with{" "}
