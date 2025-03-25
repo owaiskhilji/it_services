@@ -11,16 +11,13 @@ const Home = () => {
 
   return (
     <div>
-  {/* <modalContext.Provider value={{modal,setmodal}}> */}
-      <Hero />
+   <Hero />
       <About />
       <Services />
       <Work />
       <Projects />
       <Contact />
-      
-    {/* </modalContext.Provider> */}
-    </div>
+        </div>
   );
 };
 

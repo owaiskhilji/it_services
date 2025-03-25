@@ -2,9 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import banner1 from "../assets/banners/Banner1.png";
-import banner2 from "../assets/banners/Banner1.png";
-import banner3 from "../assets/banners/Banner1.png";
+import banner from "../assets/banners/123.png";
+import banner1 from "../assets/banners/bnr.png";
 
 function Banners() {
   const settings = {
@@ -12,25 +11,32 @@ function Banners() {
     infinite: true,
     speed: 1500,
     autoplay: true,
-    autoplaySpeed: 3000, // 3 seconds delay
     slidesToShow: 1,
     slidesToScroll: 1,
   };
 
-  const banners = [banner1, banner2, banner3]; // Multiple banners
-
   return (
-    <div className="slider-container w-full max-w-screen-lg mx-auto px-4">
+    <div className="slider-container w-full overflow-x-hidden">
       <Slider {...settings}>
-        {banners.map((img, index) => (
-          <div key={index} className="flex justify-center">
-            <img
-              src={img}
-              className="w-full h-auto max-h-[300px] object-cover rounded-md"
-              alt={`Banner ${index + 1}`}
-            />
-          </div>
-        ))}
+        {/* Banner Image */}
+        <div className="flex justify-center">
+          <img
+            src={banner}
+            className="w-full h-[200px] md:h-[250px] lg:h-[250px] object-cover mx-auto rounded-lg"
+          />
+        </div>
+        <div className="flex justify-center">
+          <img
+            src={banner1}
+            className="w-full h-auto max-h-[375px] object-cover mx-auto rounded-lg"
+          />
+        </div>
+        <div className="flex justify-center">
+          <img
+            src={banner1}
+            className="w-full h-[200px] md:h-[250px] lg:h-[250px] object-cover mx-auto rounded-lg"
+          />
+        </div>
       </Slider>
     </div>
   );

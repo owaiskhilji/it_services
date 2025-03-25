@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Banners from "./Banners";
-import modalContext from "../ContextApi/CreateContext"
+import banner from "../assets/bnn.png";
 
 
 const Hero = () => {
@@ -15,41 +15,39 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative w-full bg-white text-white min-h-screen overflow-x-hidden px-8">
-      {/* Banner Section Overlapping */}
-      <div className="absolute top-0 left-0 w-full mt-4">
-        <Banners />
-      </div>
+    <div className="relative w-full h-full min-h-screen bg-no-repeat bg-cover bg-center bg-fixed text-white overflow-x-hidden px-8"
+    style={{ backgroundImage: `url(${banner})`}}
+    >
+      
 
       {/* Hero Content */}
-      <div className="relative top-16 flex flex-col md:flex-row gap-10 pt-[250px] px-6 md:px-12 lg:px-12">
+      <div className="relative top-0 flex flex-col md:flex-row gap-10 pt-[250px] px-6 md:px-12 lg:px-12">
    <div className="flex flex-col flex-grow space-y-4 " >
-  <h1 className="text-2xl md:text-4xl lg:text-4xl text-gray-600 font-bold tracking-tight leading-snug font-serif">
+  <h1 className="text-2xl md:text-4xl lg:text-4xl text-white font-bold tracking-tight leading-snug font-serif">
     Elevate Your Brand with{" "}
-        <span className="text-[#6F4E37]">
+        <span className="text-[#EFDCAB]">
           <Typewriter
             words={["FlestaPro","FlestaPro","FlestaPro" ]}
             loop={true}
             cursor
-            // cursorStyle="|"
             typeSpeed={300}
             deleteSpeed={200}
             delaySpeed={2000}
           />
         </span>
   </h1>
-  <h2 className="text-xl md:text-2xl text-gray-600">
+  <h2 className="text-xl md:text-2xl text-gray-100">
     Your Trusted Growth Partner
   </h2>
-  <p className="text-base md:text-lg text-gray-500 max-w-lg">
+  <p className="text-base md:text-lg text-gray-100 max-w-lg">
     We craft **stunning websites, impactful designs, and powerful digital solutions**  
     that help businesses **stand out & grow** in the digital world.
   </p>
-  <p className="text-base md:text-lg text-gray-500 max-w-lg ">
+  <p className="text-base md:text-lg text-gray-300 max-w-lg ">
     Our expertise:  
-    <span className="text-[#6F4E37] font-semibold"> Web Development</span>,  
-    <span className="text-[#6F4E37] font-semibold"> Web Design</span>, and  
-    <span className="text-[#6F4E37] font-semibold"> Graphic Design</span>.  
+    <span className="text-[#EFDCAB] font-semibold"> Web Development</span>,  
+    <span className="text-[#EFDCAB] font-semibold"> Web Design</span>, and  
+    <span className="text-[#EFDCAB] font-semibold"> Graphic Design</span>.  
     Let’s build something great together! 🚀
   </p>
   <button 
@@ -61,11 +59,11 @@ const Hero = () => {
 
         {/* Right Side Content */}
         <div data-aos="fade-left" className="h-fit w-full md:w-1/3 lg:w-1/4 flex flex-col gap-6">
-          <p className="text-lg border-l-4 border-[#6F4E37] pl-4 text-gray-500 leading-relaxed">
+          <p className="text-lg border-l-4 border-[#EFDCAB] pl-4 text-gray-100 leading-relaxed">
             We craft seamless digital experiences with cutting-edge technologies.
-            Our expertise includes <span className="text-[#6F4E37] font-semibold">Web Development</span>,  
-            <span className="text-[#6F4E37] font-semibold"> Web Design</span>, and  
-            <span className="text-[#6F4E37] font-semibold"> Graphic Design</span>.
+            Our expertise includes <span className="text-[#EFDCAB] font-semibold">Web Development</span>,  
+            <span className="text-[#EFDCAB] font-semibold"> Web Design</span>, and  
+            <span className="text-[#EFDCAB] font-semibold"> Graphic Design</span>.
             Elevate your brand with stunning visuals and powerful digital solutions.
           </p>
         </div>

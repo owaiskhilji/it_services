@@ -15,7 +15,7 @@ const About = () => {
 
 
   return (
-    <div className="w-full p-4 grid grid-cols-1 md:grid-cols-2 gap-4 px-10">
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 px-10 pt-8">
   
   <div data-aos="zoom-in" className="flex flex-col gap-4 px-8">
     <h3 className="text-3xl font-semibold text-gray-500 font-serif">

@@ -17,7 +17,7 @@ const navLinks = [
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
   return (
-    <nav className="w-full border-b-2 border-[#6F4E37] bg-white/50 px-4 py-2 flex justify-between items-center sticky top-0 z-50 shadow-md">
+    <nav className="w-full border-b-2 border-[#6F4E37] bg-white/50 px-4 py-2 flex justify-between items-center sticky top-0 z-50 shadow-lg">
       {/* Logo */}
       <NavLink to="/" className="flex items-center gap-4">
         <img
