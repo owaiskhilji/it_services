@@ -17,12 +17,12 @@ const Hero = () => {
   return (
     <div className="relative w-full bg-white text-white min-h-screen overflow-x-hidden px-8">
       {/* Banner Section Overlapping */}
-      <div className="absolute top-0 left-0 w-full mt-8">
+      <div className="absolute top-0 left-0 w-full mt-4">
         <Banners />
       </div>
 
       {/* Hero Content */}
-      <div className="relative top-16 flex flex-col md:flex-row gap-10 pt-[250px] px-6 md:px-12">
+      <div className="relative top-20 flex flex-col md:flex-row gap-10 pt-[250px] px-6 md:px-12 lg:px-12">
    <div className="flex flex-col flex-grow space-y-4 " >
   <h1 className="text-2xl md:text-4xl lg:text-4xl text-gray-600 font-bold tracking-tight leading-snug font-serif">
     Elevate Your Brand with{" "}

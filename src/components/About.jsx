@@ -32,7 +32,7 @@ const About = () => {
     </p>
     <p className="text-lg tracking-normal text-gray-500">
       Whether you need a **stunning website**, a **modern UI/UX design**,  
-      or **eye-catching graphics**, Webment Digital turns your vision into reality.  
+      or **eye-catching graphics**, FlestaPro turns your vision into reality.  
       We blend creativity with cutting-edge technology to craft experiences  
       that leave a lasting impact.  
     </p>

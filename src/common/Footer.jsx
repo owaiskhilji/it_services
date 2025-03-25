@@ -23,17 +23,47 @@ const Footer = () => {
                 FlestaPro
               </h2>
             </Link>
-            <div className="flex gap-4">
-              <Link to="#" className="text-gray-600">
-                <FaSquareXTwitter size={24} />
-              </Link>
-              <Link to="#" className="text-gray-600">
-                <FaInstagramSquare size={24} />
-              </Link>
-              <Link to="#" className="text-gray-600">
-                <IoLogoTiktok size={24} />
-              </Link>
-            </div>
+            
+
+{/* Social Icons */}
+<div className="flex gap-4 mt-4 md:mt-0">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-[#EFDCAB] text-white rounded-fulltransition"
+            >
+              <FaFacebook size={20} />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-[#EFDCAB] text-white rounded-full transition"
+            >
+              <FaTwitter size={20} />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-[#EFDCAB] text-white rounded-full transition"
+            >
+              <FaInstagram size={20} />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-[#EFDCAB] text-white rounded-fulltransition"
+            >
+              
+              <FaLinkedinIn size={20} />
+            </a>
+          </div>
+
+
+
           </div>
           <div className="flex flex-col gap-4 px-8">
             <h2 className="text-2xl font-semibold text-gray-600 tracking-tighter">
@@ -170,7 +200,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="bg-[#6F4E37] text-white text-center py-4">
           <p className="text-sm">
-            © {new Date().getFullYear()} Flesta Pro. All rights reserved.
+            © {new Date().getFullYear()} FlestaPro. All rights reserved.
           </p>
         </div>
       </div>
